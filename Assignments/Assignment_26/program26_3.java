@@ -1,0 +1,68 @@
+// Input :  5
+// Output : 1   *   2   *   3   *   4   *   5   *
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Required header files
+// 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+package Assignments.Assignment_26;
+import java.util.*;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Function Name   :   Display
+//  Description     :   It is used to accept number from user and display below pattern
+//                      Input   :   5   Output  :   1   *   2   *   3   *   4   *   5   *
+//  Input           :   Int
+//  Output          :   Void
+//  Author          :   Shraddha Dhananjay Mutange
+//  Date            :   21/11/2025
+//  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class Pattern
+{
+    public void Display(int iNo)
+    {
+        int iCnt = 0;
+
+        for(iCnt = 1; iCnt <= iNo; iCnt++)
+        {
+            System.out.print(iCnt + "\t*\t");
+        }
+        System.out.println();
+    } // End of Display
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point function for the application
+// 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class program26_3
+{
+    public static void main(String A[])
+    {
+        Scanner sobj = new Scanner(System.in);
+        int iValue = 0;
+
+        System.out.println("Enter the frequency : ");
+        iValue = sobj.nextInt();
+
+        Pattern pobj = new Pattern();
+        pobj.Display(iValue);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Testcases handled successfully by the application
+// 
+//  Input   :   5       Output  :   1	*	2	*	3	*	4	*	5	*
+//  Input   :   6       Output  :   1	*	2	*	3	*	4	*	5	*   6   *
+//  Input   :   3       Output  :   1	*	2	*	3	*   
+// 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////

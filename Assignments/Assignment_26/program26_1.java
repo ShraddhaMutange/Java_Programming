@@ -1,0 +1,69 @@
+// Input :  5
+// Output : A   B   C   D   E
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Required header files
+// 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+package Assignments.Assignment_26;
+import java.util.*;
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 
+//  Function Name   :   It is used to accept number from user and display below pattern
+//                      Input   :   4   Output  :   A   B   C   D
+//  Input           :   Int
+//  Output          :   Void
+//  Author          :   Shraddha Dhananjay Mutange
+//  Date            :   21/11/2025
+//  
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class Pattern
+{
+    public void Display(int iNo)
+    {
+        int iCnt = 0;
+        char ch = '\0';
+
+        for(iCnt = 1, ch = 'A'; iCnt <= iNo; iCnt++, ch++)
+        {
+            System.out.printf("%c\t", ch);
+        }
+        System.out.println();
+    } // End of Display
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Entry point function for the application
+// 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+class program26_1
+{
+    public static void main(String A[])
+    {
+        Scanner sobj = new Scanner(System.in);
+        int iValue = 0;
+
+        System.out.println("Enter the frequency : ");
+        iValue = sobj.nextInt();
+
+        Pattern pobj = new Pattern();
+        pobj.Display(iValue);
+    }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//  Testcases handled successfully by the application
+// 
+//  Input   :   5       Output  :   A	B	C	D	E
+//  Input   :   26      Output  :   A	B	C	D	E	F	G	H	I	J	K
+//                                  L	M	N	O	P	Q	R	S	T	U	V   
+//                                  W	X   Y	Z
+// 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
