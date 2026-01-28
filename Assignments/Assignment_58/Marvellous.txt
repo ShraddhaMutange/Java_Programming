@@ -1,0 +1,6 @@
+File Name: demo.txt Size: 14 bytes
+Jay Ganesh ...
+
+File Name: new.txt Size: 5 bytes
+hello
+
