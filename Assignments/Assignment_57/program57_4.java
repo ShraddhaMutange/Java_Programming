@@ -29,18 +29,17 @@ class program57_4
 
         try
         {
-        FileInputStream fobj = new FileInputStream(fname);
+            FileInputStream fobj = new FileInputStream(fname);
 
-        while ((ch = fobj.read()) != -1) 
-        {
-            checksum = checksum + ch;
+            while ((ch = fobj.read()) != -1) 
+            {
+                checksum = checksum + ch;
+            }
+
+            fobj.close();
+
+            System.out.println("Checksum : " + checksum);
         }
-
-        fobj.close();
-
-        System.out.println("Checksum : " + checksum);
-        }
-
         catch(Exception e)
         {
             System.out.println("Error in CheckSum functionality");

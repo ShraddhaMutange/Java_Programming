@@ -33,16 +33,16 @@ public class program56_1
 
 class FileX
 {
-//////////////////////////////////////////////////////////////////////////////////////////////////
-//
-//  Method Name :   OpenFile
-//  Description :   Accepts file name via user input and opens that file
-//  Input :         String - name of the file
-//  Output :        Void
-//  Author :        Shraddha Dhananjay Mutange
-//  Date :          26/01/2026
-//  
-//////////////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////////////////////
+    //
+    //  Method Name :   OpenFile
+    //  Description :   Accepts file name via user input and opens that file
+    //  Input :         String - name of the file
+    //  Output :        Void
+    //  Author :        Shraddha Dhananjay Mutange
+    //  Date :          26/01/2026
+    //  
+    //////////////////////////////////////////////////////////////////////////////////////////////////
 
     void OpenFile(String fileName)
     {

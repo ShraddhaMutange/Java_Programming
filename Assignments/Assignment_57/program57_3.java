@@ -24,9 +24,9 @@ class program57_3
         System.out.print("Enter directory name: ");
         dname = sc.nextLine();
 
-        File f = new File(dname);
+        File file = new File(dname);
 
-        if (f.mkdir()) 
+        if (file.mkdir()) 
         {
             System.out.println("Directory created successfully.");
         }

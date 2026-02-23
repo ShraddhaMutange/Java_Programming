@@ -31,20 +31,19 @@ class program57_1
 
         try
         {
-        FileInputStream obj1 = new FileInputStream(src);
-        FileOutputStream obj2 = new FileOutputStream(dest);
+            FileInputStream obj1 = new FileInputStream(src);
+            FileOutputStream obj2 = new FileOutputStream(dest);
 
-        while ((ch = obj1.read()) != -1) 
-        {
-            obj2.write(ch);
+            while ((ch = obj1.read()) != -1) 
+            {
+                obj2.write(ch);
+            }
+
+            obj1.close();
+            obj2.close();
+
+            System.out.println("File copied successfully.");
         }
-
-        obj1.close();
-        obj2.close();
-
-        System.out.println("File copied successfully.");
-        }
-
         catch (Exception e) 
         {
             System.out.println("Error in coping the file");
