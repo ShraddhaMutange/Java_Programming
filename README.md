@@ -1,2 +1,2 @@
 # Java_Programming
-Programs &amp; assignments for Logic Building Batch - Java
+Programs &amp; assignments - Java
